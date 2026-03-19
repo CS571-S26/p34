@@ -8,8 +8,6 @@ I’m curious about how the fetching of the API will work, and how creating new 
 
 The scope of this project might change depending on the difficulties found along the road. The bare minimum I plan on executing is a page where you can add your own research interests, and search for users with matching interests. The maximum scope would encompass a website that has an account creator, a research matcher, and an interactive whiteboard that can be used to annotate research ideas.
 
-
-
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

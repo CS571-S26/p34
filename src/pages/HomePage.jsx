@@ -7,7 +7,8 @@ export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
-    <div className="w-100 h-100 d-flex justify-content-center align-items-center">
+    // <div className="h-100 d-flex justify-content-center align-items-center">
+    <div className="d-flex justify-content-center align-items-center">
       <Card className='m-4 p-2'>
         <Card.Header>
           <h1>Badger Research</h1>
@@ -23,10 +24,12 @@ export default function HomePage() {
                 <br />
                 <Button variant="danger" onClick={null}>Reset Search</Button>
                 <br />
-                {/* <p>There are <strong id="num-results">{filterStudents?.length}</strong> student(s) matching your search.</p> */}
-                <p>There are <strong id="num-results">{null}</strong> result(s) matching your search.</p>
-            </Form>
+          </Form>
         </Card.Body>
+        <Card.Footer>
+          {/* <p>There are <strong id="num-results">{filterStudents?.length}</strong> student(s) matching your search.</p> */}
+          <p>There are <strong id="num-results">{null}</strong> result(s) matching your search.</p>
+        </Card.Footer>
       </Card>
     </div>
   )
