@@ -7,7 +7,6 @@ export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
-    // <div className="h-100 d-flex justify-content-center align-items-center">
     <div className="d-flex justify-content-center align-items-center">
       <Card className='m-4 p-2'>
         <Card.Header>
@@ -28,7 +27,7 @@ export default function HomePage() {
         </Card.Body>
         <Card.Footer>
           {/* <p>There are <strong id="num-results">{filterStudents?.length}</strong> student(s) matching your search.</p> */}
-          <p>There are <strong id="num-results">{null}</strong> result(s) matching your search.</p>
+          <p>There are <strong id="num-results">0</strong> result(s) matching your search.</p>
         </Card.Footer>
       </Card>
     </div>

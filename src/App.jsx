@@ -1,20 +1,18 @@
 import './App.css'
-import { Routes, Route } from 'react-router-dom'
-import HomePage from './pages/HomePage.jsx'
-import AboutPage from './pages/AboutPage.jsx'
-import NotFoundPage from './pages/NotFoundPage.jsx'
-import Layout from './components/Layout.jsx'
+import { Header } from './components/Header';
+import { SearchHero } from './components/SearchHero';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<HomePage />} />
-        <Route path="about" element={<AboutPage />} />
-        <Route path="*" element={<NotFoundPage />} />
-      </Route>
-    </Routes>
-  )
+    <div className="min-h-screen bg-white">
+      <Header />
+      <main>
+        <SearchHero />
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
 export default App
