@@ -1,35 +1,48 @@
-import { useState } from 'react'
-import '../App.css'
-import { Button, Card, Form } from 'react-bootstrap'
+import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 export default function HomePage() {
-  // const [count, setCount] = useState(0)
-  const [searchQuery, setSearchQuery] = useState("");
+  const [hovered, setHovered] = useState(null);
+
+  const getFlexValue = (side) => {
+    if (hovered === null) return 1;
+    return hovered === side ? 1.2 : 0.8;
+  };
+
+  const sideStyle = (side, bg) => ({
+    flex: getFlexValue(side),
+    background: bg,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    cursor: 'pointer',
+    transition: 'flex 0.4s ease',
+    overflow: 'hidden'
+  });
+
+  const navigate = useNavigate();
 
   return (
-    <div className="d-flex justify-content-center align-items-center">
-      <Card className='m-4 p-2'>
-        <Card.Header>
-          <h1>Badger Research</h1>
-        </Card.Header>
-        <Card.Body className='text-center'>
-          {/* <Button onClick={() => setCount(o => o + 1)}>Count: {count}</Button> */}
-          <Form>
-                <Form.Label htmlFor="searchBar">Name</Form.Label>
-                <Form.Control id="searchBar"
-                            placeholder="Search for a research interest..."
-                            value={searchQuery}
-                            onChange={(e) => {setSearchQuery(e.target.value), setCurrentPage(1)}}/>
-                <br />
-                <Button variant="danger" onClick={null}>Reset Search</Button>
-                <br />
-          </Form>
-        </Card.Body>
-        <Card.Footer>
-          {/* <p>There are <strong id="num-results">{filterStudents?.length}</strong> student(s) matching your search.</p> */}
-          <p>There are <strong id="num-results">0</strong> result(s) matching your search.</p>
-        </Card.Footer>
-      </Card>
+    <div style={{ display: 'flex', height: 'calc(100vh - 64px)' }}>
+      {/* Left side */}
+      <div
+        style={sideStyle('left', '#2563eb')}
+        onMouseEnter={() => setHovered('left')}
+        onMouseLeave={() => setHovered(null)}
+        onClick={() => navigate('/search')}
+      >
+        <span style={{ color: 'white', fontSize: '48px', fontWeight: 'bold' }}>Search</span>
+      </div>
+      {/* Right side */}
+      <div
+        style={sideStyle('right', '#dc2626')}
+        onMouseEnter={() => setHovered('right')}
+        onMouseLeave={() => setHovered(null)}
+        onClick={() => navigate('/profile')}
+      >
+        <span style={{ color: 'white', fontSize: '48px', fontWeight: 'bold' }}>Profile</span>
+      </div>
     </div>
-  )
+  );
 }

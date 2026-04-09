@@ -1,14 +1,28 @@
-import './App.css'
+import './App.css';
+// Import Router
+import { Routes, Route } from 'react-router-dom';
+// Import Header & Footer
 import { Header } from './components/Header';
-import { SearchHero } from './components/SearchHero';
 import { Footer } from './components/Footer';
+// Import individual pages
+import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
+import SearchPage from './pages/SearchPage';
+import Profile from './pages/Profile';
+
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div style={{ minHeight: '100vh', background: 'white' }}>
       <Header />
       <main>
-        <SearchHero />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/search" element={<SearchPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          {/* <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
       </main>
       <Footer />
     </div>
