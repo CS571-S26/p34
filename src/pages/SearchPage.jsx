@@ -12,7 +12,7 @@ export default function SearchPage() {
 
   useEffect(() => {
     // Fetch
-    fetch("src/professors.json")
+    fetch("/professors.json")
       // Turn into JSON
       .then(res => res.json())
       // Parse out as data

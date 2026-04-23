@@ -1,0 +1,134 @@
+[
+  {
+    "id": "1",
+    "name": "Dr. Sarah Chen",
+    "department": "Computer Science",
+    "title": "Professor",
+    "email": "s.chen@university.edu",
+    "researchInterests": ["Machine Learning", "Natural Language Processing", "AI Ethics"],
+    "publications": 87,
+    "bio": "Dr. Chen focuses on developing ethical AI systems and advancing natural language understanding.",
+    "imageUrl": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop"
+  },
+  {
+    "id": "2",
+    "name": "Dr. Michael Rodriguez",
+    "department": "Physics",
+    "title": "Associate Professor",
+    "email": "m.rodriguez@university.edu",
+    "researchInterests": ["Quantum Mechanics", "Condensed Matter Physics", "Superconductivity"],
+    "publications": 62,
+    "bio": "Exploring quantum phenomena in novel materials and their applications in quantum computing.",
+    "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
+  },
+  {
+    "id": "3",
+    "name": "Dr. Emily Thompson",
+    "department": "Biology",
+    "title": "Professor",
+    "email": "e.thompson@university.edu",
+    "researchInterests": ["Genomics", "Cancer Biology", "Molecular Genetics"],
+    "publications": 104,
+    "bio": "Investigating genetic mechanisms underlying cancer development and therapeutic interventions.",
+    "imageUrl": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop"
+  },
+  {
+    "id": "4",
+    "name": "Dr. James Patterson",
+    "department": "Economics",
+    "title": "Professor",
+    "email": "j.patterson@university.edu",
+    "researchInterests": ["Behavioral Economics", "Game Theory", "Market Design"],
+    "publications": 76,
+    "bio": "Studying decision-making processes and designing efficient market mechanisms.",
+    "imageUrl": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop"
+  },
+  {
+    "id": "5",
+    "name": "Dr. Lisa Martinez",
+    "department": "Psychology",
+    "title": "Associate Professor",
+    "email": "l.martinez@university.edu",
+    "researchInterests": ["Cognitive Psychology", "Memory", "Attention"],
+    "publications": 54,
+    "bio": "Examining cognitive processes related to memory formation and attentional mechanisms.",
+    "imageUrl": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&h=400&fit=crop"
+  },
+  {
+    "id": "6",
+    "name": "Dr. David Kumar",
+    "department": "Computer Science",
+    "title": "Assistant Professor",
+    "email": "d.kumar@university.edu",
+    "researchInterests": ["Computer Vision", "Robotics", "Deep Learning"],
+    "publications": 38,
+    "bio": "Developing computer vision systems for autonomous robots and intelligent agents.",
+    "imageUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop"
+  },
+  {
+    "id": "7",
+    "name": "Dr. Rachel Foster",
+    "department": "Chemistry",
+    "title": "Professor",
+    "email": "r.foster@university.edu",
+    "researchInterests": ["Organic Chemistry", "Drug Discovery", "Chemical Synthesis"],
+    "publications": 93,
+    "bio": "Designing and synthesizing novel organic compounds for pharmaceutical applications.",
+    "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop"
+  },
+  {
+    "id": "8",
+    "name": "Dr. Robert Lee",
+    "department": "Mathematics",
+    "title": "Professor",
+    "email": "r.lee@university.edu",
+    "researchInterests": ["Number Theory", "Cryptography", "Abstract Algebra"],
+    "publications": 71,
+    "bio": "Working on problems in analytic number theory with applications to cryptographic systems.",
+    "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop"
+  },
+  {
+    "id": "9",
+    "name": "Dr. Jennifer Wang",
+    "department": "Environmental Science",
+    "title": "Associate Professor",
+    "email": "j.wang@university.edu",
+    "researchInterests": ["Climate Change", "Sustainability", "Environmental Policy"],
+    "publications": 58,
+    "bio": "Researching climate change impacts and developing sustainable environmental solutions.",
+    "imageUrl": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop"
+  },
+  {
+    "id": "10",
+    "name": "Dr. Thomas Anderson",
+    "department": "Political Science",
+    "title": "Professor",
+    "email": "t.anderson@university.edu",
+    "researchInterests": ["International Relations", "Comparative Politics", "Democratic Theory"],
+    "publications": 82,
+    "bio": "Analyzing democratic institutions and international political dynamics.",
+    "imageUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop"
+  },
+  {
+    "id": "11",
+    "name": "Dr. Maria Gonzalez",
+    "department": "Neuroscience",
+    "title": "Assistant Professor",
+    "email": "m.gonzalez@university.edu",
+    "researchInterests": ["Brain Imaging", "Neuroplasticity", "Cognitive Neuroscience"],
+    "publications": 42,
+    "bio": "Using neuroimaging techniques to understand brain plasticity and learning.",
+    "imageUrl": "https://images.unsplash.com/photo-1548142813-c348350df52b?w=400&h=400&fit=crop"
+  },
+  {
+    "id": "12",
+    "name": "Dr. Christopher Brown",
+    "department": "History",
+    "title": "Professor",
+    "email": "c.brown@university.edu",
+    "researchInterests": ["Modern European History", "Social Movements", "Cultural History"],
+    "publications": 65,
+    "bio": "Examining social and cultural transformations in 20th-century Europe.",
+    "imageUrl": "https://images.unsplash.com/photo-1463453091185-61582044d556?w=400&h=400&fit=crop"
+  }
+]
