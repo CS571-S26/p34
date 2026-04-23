@@ -25,8 +25,11 @@ export default function SearchPage() {
 
   const filteredProfessors = useMemo(() => {
       const q = query.toLowerCase().trim();
+      // if no query, return all profiles.
       if (!q) return professorProfiles;
   
+      // If query exists,
+      // Filter set-up: checks all params for query
       return professorProfiles.filter((prof) => {
         return (
           prof.name.toLowerCase().includes(q) ||

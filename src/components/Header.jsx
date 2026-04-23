@@ -14,7 +14,7 @@ const navLinkStyle = {
 const navLinks = [
   { to: '/', label: 'Home'},
   { to: '/about', label: 'About'},
-  { to: '//', label: 'W.I.P.'},
+  // { to: '//', label: 'W.I.P.'},
   // { to: '/contact', label: 'Contact'},
   { to: '/profile', label: 'Profile'},
   // { to: '/', label: 'W.I.P.'},
