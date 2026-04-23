@@ -22,7 +22,7 @@ export default function ProfilePage() {
   const [professors, setProfessors] = useState([]);
 
   useEffect(() => {
-    fetch("/professors.json")
+    fetch(`${import.meta.env.BASE_URL}professors.json`)
       .then((res) => res.json())
       .then(setProfessors)
       .catch((err) => console.error('Fetch failed:', err));
