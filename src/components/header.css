@@ -1,0 +1,66 @@
+/* header.css */
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.header__hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.header__hamburger-bar {
+  width: 24px;
+  height: 2px;
+  background: #111827;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animate bars into an X when open */
+.header__hamburger--open .header__hamburger-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.header__hamburger--open .header__hamburger-bar:nth-child(2) {
+  opacity: 0;
+}
+.header__hamburger--open .header__hamburger-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile dropdown */
+.header__mobile-nav {
+  display: none;
+  flex-direction: column;
+  padding: 12px 32px 16px;
+  gap: 4px;
+  border-top: 1px solid #fecaca;
+}
+
+.header__mobile-nav--open {
+  display: flex;
+}
+
+@media (max-width: 520px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__hamburger {
+    display: flex;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header__hamburger-bar {
+    transition: none;
+  }
+}

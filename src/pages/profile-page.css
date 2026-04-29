@@ -5,7 +5,7 @@
 :root {
   --profile-cream: #f9f6f1;
   --profile-ink: #1a1612;
-  --profile-muted: #7a7068;
+  --profile-muted: #6b6259;
   --profile-accent: #c84b2f;
   --profile-accent-light: #fdf0ed;
   --profile-border: #e8e2d9;
@@ -216,7 +216,7 @@
 
 .profile-match-card__tag--other {
   background: #f3f4f6;
-  color: #6b7280;
+  color: #616876;
 }
 
 .profile-matches__empty {

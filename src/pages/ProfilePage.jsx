@@ -49,11 +49,11 @@ export default function ProfilePage() {
 
         {/* ── Block 1: Identity ── */}
         <div className="profile-block">
-          <p className="profile-block__label">Your Profile</p>
+          <h2 className="profile-block__label">Your Profile</h2>
           <div className="profile-identity">
             <img
               src={CURRENT_USER.imageUrl}
-              alt={CURRENT_USER.name}
+              alt={`Profile photo of ${CURRENT_USER.name}`}
               className="profile-identity__avatar"
             />
             <div>
@@ -69,7 +69,7 @@ export default function ProfilePage() {
 
         {/* ── Block 2: Research Interests ── */}
         <div className="profile-block">
-          <p className="profile-block__label">Research Interests</p>
+          <h2 className="profile-block__label">Research Interests</h2>
           <div className="profile-interests__grid">
             {CURRENT_USER.researchInterests.map((interest) => (
               <div key={interest} className="profile-interest-card">
@@ -82,7 +82,7 @@ export default function ProfilePage() {
 
         {/* ── Block 3: Matching Professors ── */}
         <div className="profile-block">
-          <p className="profile-block__label">Matching Professors</p>
+          <h2 className="profile-block__label">Matching Professors</h2>
           {matchingProfessors.length > 0 ? (
             <div className="profile-matches__list">
               {matchingProfessors.map((prof) => {
@@ -93,7 +93,7 @@ export default function ProfilePage() {
                   <div key={prof.id} className="profile-match-card">
                     <img
                       src={prof.imageUrl}
-                      alt={prof.name}
+                      alt={`Profile photo of ${prof.name}`}
                       className="profile-match-card__avatar"
                     />
                     <div className="profile-match-card__body">

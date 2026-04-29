@@ -1,8 +1,55 @@
+/* Fade-in-and-up animations */
 @keyframes blockFadeUp {
   from { opacity: 0; transform: translateY(18px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
+/* Professor cards */
 .professor-card {
   animation: blockFadeUp 1.5s ease both;
+}
+
+/*  Homepage panel focus styles */
+.home-panel:focus-visible {
+  outline: 4px solid white;
+  outline-offset: -8px;
+}
+
+/* Remove the default focus ring (we're replacing it, not removing it) */
+.home-panel:focus {
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-panel {
+    transition: none;
+  }
+}
+
+/* ── Mobile touch affordance ────────────────────────── */
+@media (hover: none) {
+  .home-panel {
+    animation: panelPulse 2.5s ease-in-out infinite;
+  }
+
+  .home-panel:nth-child(2) {
+    animation-delay: 1.25s;
+  }
+
+  @keyframes panelPulse {
+    0%, 100% { filter: brightness(1); }
+    50%       { filter: brightness(1.12); }
+  }
+
+  /* Tap ripple */
+  .home-panel:active {
+    filter: brightness(0.88);
+    transition: filter 0.1s ease;
+  }
+}
+
+@media (hover: none) and (prefers-reduced-motion: reduce) {
+  .home-panel {
+    animation: none;
+  }
 }

@@ -45,6 +45,7 @@ export default function SearchPage() {
 
   return (
     <>
+      <h1 className="sr-only">Search Academic Professors</h1>
       {/* Pass the query state down so SearchHero can control it */}
       <SearchHero query={query} onQueryChange={setQuery} />
 

@@ -8,7 +8,7 @@ export default function ProfessorCard({ professor }) {
   return (
     <div className="professor-card">
       <div className="professor-card__avatar">
-        <img src={imageUrl} alt={name} />
+        <img src={imageUrl} alt={`Profile photo of ${name}`} />
       </div>
 
       <div className="professor-card__body">

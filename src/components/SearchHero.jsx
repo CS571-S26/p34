@@ -14,18 +14,26 @@ export function SearchHero({ query, onQueryChange }) {
         </div>
 
         <div className="search-hero__bar-wrapper">
-          <div className="search-hero__bar">
+          <form
+            className="search-hero__bar"
+            role="search"
+            onSubmit={(e) => e.preventDefault()}
+          >
+            <label htmlFor="professor-search" className="sr-only">
+              Search professors
+            </label>
             <input
+              id="professor-search"
               type="text"
               placeholder="Search by title, author, keyword, or topic..."
               value={query}
               onChange={(e) => onQueryChange(e.target.value)}
               className="search-hero__input"
             />
-            <button className="search-hero__button">
+            <button type="submit" className="search-hero__button">
               Search
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
